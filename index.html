@@ -7,19 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- line below added to include image in jumbotron -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 ​
 <body>
-​
+<!-- ​changes made for deliverable 4: mobile responsive, image in jumbotron, and  small paragraph added below the jumbotron describing how the webpage works and about the experiment-->
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
+      <div class="col-xs-16 col-md-12 jumbotron text-center">
+        <h1>Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+      <div class="col-xs-12 col-md-10">
+          <p>On this page, you can select the test subject ID number to get their data from the experiment. All information from the selected test subject will populate in the charts below. Most importantly, you can identify the top 10 bacterial species in your belly button. Therefore, if Improbable Beef identifies a species as a candidate to manufacture synthetic beef, then you can check to see if that species is found in your navel - how exciting! Thank you to all volunteers and have fun exploring your Belly Button Data!</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-xs-4 col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
@@ -32,21 +37,20 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-xs-7 col-md-5">
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-xs-7 col-md-5">
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-xs-16 col-md-12">
         <div id="bubble"></div>
       </div>
     </div>
   </div>
 ​
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script> -->
 <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
